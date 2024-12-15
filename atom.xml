@@ -3,11 +3,11 @@
   <title>辣条の小屋</title>
   
   <subtitle>Ciallo～(∠・ω&lt; )⌒☆</subtitle>
-  <link href="http://blog.mimami.us.kg/atom.xml" rel="self"/>
+  <link href="https://blog.owwo.fun/atom.xml" rel="self"/>
   
-  <link href="http://blog.mimami.us.kg/"/>
+  <link href="https://blog.owwo.fun/"/>
   <updated>2024-11-24T02:30:00.000Z</updated>
-  <id>http://blog.mimami.us.kg/</id>
+  <id>https://blog.owwo.fun/</id>
   
   <author>
     <name>辣条</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>AnZhiYu主题添加日历卡片</title>
-    <link href="http://blog.mimami.us.kg/post/91d3a27d/"/>
-    <id>http://blog.mimami.us.kg/post/91d3a27d/</id>
+    <link href="https://blog.owwo.fun/post/91d3a27d/"/>
+    <id>https://blog.owwo.fun/post/91d3a27d/</id>
     <published>2024-11-23T14:19:37.000Z</published>
     <updated>2024-11-24T02:30:00.000Z</updated>
     
@@ -35,17 +35,17 @@
     
     
     
-    <category term="教程" scheme="http://blog.mimami.us.kg/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://blog.owwo.fun/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="Anzhiyu" scheme="http://blog.mimami.us.kg/tags/Anzhiyu/"/>
+    <category term="Anzhiyu" scheme="https://blog.owwo.fun/tags/Anzhiyu/"/>
     
   </entry>
   
   <entry>
     <title>随身WiFi刷Debian系统教程</title>
-    <link href="http://blog.mimami.us.kg/post/ee80e2e7/"/>
-    <id>http://blog.mimami.us.kg/post/ee80e2e7/</id>
+    <link href="https://blog.owwo.fun/post/ee80e2e7/"/>
+    <id>https://blog.owwo.fun/post/ee80e2e7/</id>
     <published>2024-11-15T12:56:24.000Z</published>
     <updated>2024-11-15T12:56:24.000Z</updated>
     
@@ -63,21 +63,21 @@
     
     
     
-    <category term="教程" scheme="http://blog.mimami.us.kg/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://blog.owwo.fun/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="随身WiFi" scheme="http://blog.mimami.us.kg/tags/%E9%9A%8F%E8%BA%ABWiFi/"/>
+    <category term="随身WiFi" scheme="https://blog.owwo.fun/tags/%E9%9A%8F%E8%BA%ABWiFi/"/>
     
-    <category term="刷机" scheme="http://blog.mimami.us.kg/tags/%E5%88%B7%E6%9C%BA/"/>
+    <category term="刷机" scheme="https://blog.owwo.fun/tags/%E5%88%B7%E6%9C%BA/"/>
     
-    <category term="UZ801" scheme="http://blog.mimami.us.kg/tags/UZ801/"/>
+    <category term="UZ801" scheme="https://blog.owwo.fun/tags/UZ801/"/>
     
   </entry>
   
   <entry>
     <title>Java八股</title>
-    <link href="http://blog.mimami.us.kg/post/cc8476c6/"/>
-    <id>http://blog.mimami.us.kg/post/cc8476c6/</id>
+    <link href="https://blog.owwo.fun/post/cc8476c6/"/>
+    <id>https://blog.owwo.fun/post/cc8476c6/</id>
     <published>2024-10-29T14:39:16.000Z</published>
     <updated>2024-10-30T04:20:00.000Z</updated>
     
@@ -86,21 +86,21 @@
     
     
     
-    <category term="学习笔记" scheme="http://blog.mimami.us.kg/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="https://blog.owwo.fun/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="Java" scheme="http://blog.mimami.us.kg/tags/Java/"/>
+    <category term="Java" scheme="https://blog.owwo.fun/tags/Java/"/>
     
-    <category term="SpringBoot" scheme="http://blog.mimami.us.kg/tags/SpringBoot/"/>
+    <category term="SpringBoot" scheme="https://blog.owwo.fun/tags/SpringBoot/"/>
     
-    <category term="加密" scheme="http://blog.mimami.us.kg/tags/%E5%8A%A0%E5%AF%86/"/>
+    <category term="加密" scheme="https://blog.owwo.fun/tags/%E5%8A%A0%E5%AF%86/"/>
     
   </entry>
   
   <entry>
     <title>一篇加密的文章</title>
-    <link href="http://blog.mimami.us.kg/post/30abfe58/"/>
-    <id>http://blog.mimami.us.kg/post/30abfe58/</id>
+    <link href="https://blog.owwo.fun/post/30abfe58/"/>
+    <id>https://blog.owwo.fun/post/30abfe58/</id>
     <published>2024-10-29T04:39:16.000Z</published>
     <updated>2024-10-29T14:19:00.000Z</updated>
     
@@ -109,23 +109,23 @@
     
     
     
-    <category term="编程" scheme="http://blog.mimami.us.kg/categories/%E7%BC%96%E7%A8%8B/"/>
+    <category term="编程" scheme="https://blog.owwo.fun/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
-    <category term="Java" scheme="http://blog.mimami.us.kg/tags/Java/"/>
+    <category term="Java" scheme="https://blog.owwo.fun/tags/Java/"/>
     
-    <category term="SpringBoot" scheme="http://blog.mimami.us.kg/tags/SpringBoot/"/>
+    <category term="SpringBoot" scheme="https://blog.owwo.fun/tags/SpringBoot/"/>
     
-    <category term="加密" scheme="http://blog.mimami.us.kg/tags/%E5%8A%A0%E5%AF%86/"/>
+    <category term="加密" scheme="https://blog.owwo.fun/tags/%E5%8A%A0%E5%AF%86/"/>
     
-    <category term="C++" scheme="http://blog.mimami.us.kg/tags/C/"/>
+    <category term="C++" scheme="https://blog.owwo.fun/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://blog.mimami.us.kg/post/4a17b156/"/>
-    <id>http://blog.mimami.us.kg/post/4a17b156/</id>
+    <link href="https://blog.owwo.fun/post/4a17b156/"/>
+    <id>https://blog.owwo.fun/post/4a17b156/</id>
     <published>2024-10-19T16:00:00.000Z</published>
     <updated>2024-10-20T02:20:00.000Z</updated>
     
@@ -140,10 +140,10 @@
     
     
     
-    <category term="Hello World" scheme="http://blog.mimami.us.kg/categories/Hello-World/"/>
+    <category term="Hello World" scheme="https://blog.owwo.fun/categories/Hello-World/"/>
     
     
-    <category term="Hello World" scheme="http://blog.mimami.us.kg/tags/Hello-World/"/>
+    <category term="Hello World" scheme="https://blog.owwo.fun/tags/Hello-World/"/>
     
   </entry>
   
