@@ -7475,26 +7475,6 @@ body[data-type="link"] #page .page-title {
     padding: 0px 20px 0px;
   }
 }
-div#bannerGroup {
-  margin-right: 10px;
-  width: calc(51% - 10px) !important;
-}
-@media screen and (max-width: 768px) {
-  #home_top {
-    padding: 0px 15px;
-  }
-  #topPostGroup {
-    height: 280px;
-  }
-  #swiper_container_blog {
-    padding: 0 10px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  div#bannerGroup {
-    display: none !important;
-  }
-}
 #content-inner #recent-posts > .recent-post-item > .recent-post-info > .content {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -24831,7 +24811,7 @@ div#swiper_container:hover {
   height: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 -109px 133px -9px #000000 inset;
+  box-shadow: 0 -109px 133px -9px rgba(0, 0, 0, 0) inset; /*修改首页图片阴影*/
 }
 
 .topGroup .todayCard.hide {
