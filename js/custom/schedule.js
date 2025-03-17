@@ -95,7 +95,7 @@ function cardTimes() {
         lunarMon = chineseLunar.format(lunarDate, "M");
         lunarDay = chineseLunar.format(lunarDate, "d");
 
-        const newYearDate = new Date("2025/01/28 00:00:00");
+        const newYearDate = getNextNewYearEve();
         const daysUntilNewYear = Math.floor((newYearDate - now) / 1e3 / 60 / 60 / 24);
         asideTime = new Date(`${new Date().getFullYear()}/01/01 00:00:00`);
         asideDay = (now - asideTime) / 1e3 / 60 / 60 / 24;
@@ -108,4 +108,31 @@ function cardTimes() {
         e.querySelector("#calendar-lunar").innerHTML = `${ganzhiYear}${animalYear}年&nbsp;${lunarMon}${lunarDay}`;
         document.getElementById("schedule-days").innerHTML = daysUntilNewYear;
     }
+}
+
+function getNextNewYearEve() {
+    const now = new Date();
+    // 从当前年份开始查找未来两年的春节
+    for (let y = now.getFullYear(); y <= now.getFullYear() + 2; y++) {
+        // 春节通常在1月或2月
+        for (let m = 0; m <= 1; m++) { // 0: 一月, 1: 二月
+            // 检查每个月的每一天，最多31天
+            for (let d = 1; d <= 31; d++) {
+                const date = new Date(y, m, d);
+                const lunar = chineseLunar.solarToLunar(date);
+                // 判断是否为农历正月初一（春节）
+                if (lunar.lMonth === 0 && lunar.lDay === 1) {
+                    const springFestival = date;
+                    // 春节前一天是除夕
+                    const newYearEve = new Date(springFestival);
+                    newYearEve.setDate(newYearEve.getDate() - 1);
+                    // 如果找到的除夕在当前日期之后，则返回
+                    if (newYearEve > now) {
+                        return newYearEve;
+                    }
+                }
+            }
+        }
+    }
+    return new Date(); // 默认返回（理论上不会执行到这里）
 }
