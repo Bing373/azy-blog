@@ -189,13 +189,6 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/tags/Hello-World/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.owwo.fun/tags/Java/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -224,7 +217,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/tags/%E5%9F%9F%E5%90%8D/</loc>
+    <loc>https://blog.owwo.fun/tags/Hello-World/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -251,17 +244,17 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://blog.owwo.fun/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://blog.owwo.fun/tags/%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://blog.owwo.fun/categories/Hello-World/</loc>
+    <loc>https://blog.owwo.fun/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -276,6 +269,13 @@
   
   <url>
     <loc>https://blog.owwo.fun/categories/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.owwo.fun/categories/Hello-World/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
