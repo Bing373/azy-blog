@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/essay/</loc>
+    <loc>https://blog.owwo.fun/essay/index.html</loc>
     
     <lastmod>2024-12-20</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/album/</loc>
+    <loc>https://blog.owwo.fun/album/index.html</loc>
     
     <lastmod>2024-12-20</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/about/</loc>
+    <loc>https://blog.owwo.fun/about/index.html</loc>
     
     <lastmod>2024-12-20</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/privacy/</loc>
+    <loc>https://blog.owwo.fun/privacy/index.html</loc>
     
     <lastmod>2024-12-15</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/link/</loc>
+    <loc>https://blog.owwo.fun/link/index.html</loc>
     
     <lastmod>2024-12-15</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/equipment/</loc>
+    <loc>https://blog.owwo.fun/equipment/index.html</loc>
     
     <lastmod>2024-11-23</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/music/</loc>
+    <loc>https://blog.owwo.fun/music/index.html</loc>
     
     <lastmod>2024-11-23</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/copyright/</loc>
+    <loc>https://blog.owwo.fun/copyright/index.html</loc>
     
     <lastmod>2024-11-23</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/cookies/</loc>
+    <loc>https://blog.owwo.fun/cookies/index.html</loc>
     
     <lastmod>2024-11-23</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/tags/</loc>
+    <loc>https://blog.owwo.fun/tags/index.html</loc>
     
     <lastmod>2024-11-23</lastmod>
     
@@ -119,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/categories/</loc>
+    <loc>https://blog.owwo.fun/categories/index.html</loc>
     
     <lastmod>2024-11-23</lastmod>
     
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://blog.owwo.fun/moments/</loc>
+    <loc>https://blog.owwo.fun/moments/index.html</loc>
     
     <lastmod>2024-11-21</lastmod>
     
@@ -189,6 +189,13 @@
   </url>
   
   <url>
+    <loc>https://blog.owwo.fun/tags/Hello-World/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.owwo.fun/tags/Java/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -218,13 +225,6 @@
   
   <url>
     <loc>https://blog.owwo.fun/tags/%E5%9F%9F%E5%90%8D/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.owwo.fun/tags/Hello-World/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -261,6 +261,13 @@
   </url>
   
   <url>
+    <loc>https://blog.owwo.fun/categories/Hello-World/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.owwo.fun/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -276,13 +283,6 @@
   
   <url>
     <loc>https://blog.owwo.fun/categories/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.owwo.fun/categories/Hello-World/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
