@@ -6,7 +6,7 @@
   <link href="https://blog.owwo.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.owwo.fun/"/>
-  <updated>2024-12-15T08:35:36.000Z</updated>
+  <updated>2025-04-26T03:56:01.000Z</updated>
   <id>https://blog.owwo.fun/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>想说的话</title>
+    <link href="https://blog.owwo.fun/posts/forever/"/>
+    <id>https://blog.owwo.fun/posts/forever/</id>
+    <published>2025-04-26T03:56:01.000Z</published>
+    <updated>2025-04-26T03:56:01.000Z</updated>
+    
+    
+    <summary type="html">写给记忆中的你</summary>
+    
+    
+    
+    <category term="生活" scheme="https://blog.owwo.fun/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="初恋" scheme="https://blog.owwo.fun/tags/%E5%88%9D%E6%81%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>新域名 新生活</title>
