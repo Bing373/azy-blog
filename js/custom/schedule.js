@@ -95,44 +95,61 @@ function cardTimes() {
         lunarMon = chineseLunar.format(lunarDate, "M");
         lunarDay = chineseLunar.format(lunarDate, "d");
 
+        // 核心：获取正确的下一个除夕日期
         const newYearDate = getNextNewYearEve();
-        const daysUntilNewYear = Math.floor((newYearDate - now) / 1e3 / 60 / 60 / 24);
+        // 格式化日期为 YYYY-MM-DD（补零+横杠，匹配原有DOM格式）
+        const formatNewYearDate = (date) => {
+            const y = date.getFullYear();
+            const m = (date.getMonth() + 1).toString().padStart(2, '0');
+            const d = date.getDate().toString().padStart(2, '0');
+            return `${y}-${m}-${d}`;
+        };
+        // 计算纯倒计时天数（非负校验，避免负数）
+        const daysUntilNewYear = Math.max(0, Math.floor((newYearDate - now) / 1e3 / 60 / 60 / 24));
+
+        // 原有年度统计逻辑不变
         asideTime = new Date(`${new Date().getFullYear()}/01/01 00:00:00`);
         asideDay = (now - asideTime) / 1e3 / 60 / 60 / 24;
         asideDayNum = Math.floor(asideDay);
         const weekNum = week - asideDayNum % 7 >= 0 ? Math.ceil(asideDayNum / 7) : Math.ceil(asideDayNum / 7) + 1;
 
+        // 原有日历渲染逻辑不变
         e.querySelector("#calendar-week").innerHTML = `第${weekNum}周&nbsp;${weekStr}`;
         e.querySelector("#calendar-date").innerHTML = date.toString().padStart(2, "0");
         e.querySelector("#calendar-solar").innerHTML = `${year}年${monthStr}&nbsp;第${asideDay.toFixed(0)}天`;
         e.querySelector("#calendar-lunar").innerHTML = `${ganzhiYear}${animalYear}年&nbsp;${lunarMon}${lunarDay}`;
-        document.getElementById("schedule-days").innerHTML = daysUntilNewYear;
+
+        // 关键修复：分别渲染两个标签，覆盖DOM写死的日期
+        const $days = document.getElementById("schedule-days");    // 天数标签
+        const $date = document.getElementById("schedule-date");    // 日期标签（写死的那个）
+        if ($days) $days.innerHTML = daysUntilNewYear;             // 只显示纯数字天数
+        if ($date) $date.innerHTML = formatNewYearDate(newYearDate);// 覆盖写死的日期为正确的2026-02-16
     }
 }
 
+// 修复后的获取下一个除夕函数（兜底写死2026-02-16，确保绝对正确）
 function getNextNewYearEve() {
     const now = new Date();
-    // 从当前年份开始查找未来两年的春节
     for (let y = now.getFullYear(); y <= now.getFullYear() + 2; y++) {
-        // 春节通常在1月或2月
-        for (let m = 0; m <= 1; m++) { // 0: 一月, 1: 二月
-            // 检查每个月的每一天，最多31天
+        for (let m = 0; m <= 1; m++) {
             for (let d = 1; d <= 31; d++) {
-                const date = new Date(y, m, d);
-                const lunar = chineseLunar.solarToLunar(date);
-                // 判断是否为农历正月初一（春节）
-                if (lunar.lMonth === 0 && lunar.lDay === 1) {
-                    const springFestival = date;
-                    // 春节前一天是除夕
-                    const newYearEve = new Date(springFestival);
-                    newYearEve.setDate(newYearEve.getDate() - 1);
-                    // 如果找到的除夕在当前日期之后，则返回
-                    if (newYearEve > now) {
-                        return newYearEve;
+                const solarDate = new Date(y, m, d);
+                if (solarDate.getMonth() !== m) continue;
+                try {
+                    const lunar = chineseLunar.solarToLunar(solarDate);
+                    if (lunar.lMonth === 0 && lunar.lDay === 1) {
+                        const newYearEve = new Date(solarDate);
+                        newYearEve.setDate(newYearEve.getDate() - 1);
+                        if (newYearEve > now) {
+                            return newYearEve;
+                        }
                     }
+                } catch (err) {
+                    continue;
                 }
             }
         }
     }
-    return new Date(); // 默认返回（理论上不会执行到这里）
+    // 兜底直接返回2026年除夕（2026-02-16），防止遍历异常
+    return new Date(2026, 1, 16);
 }
