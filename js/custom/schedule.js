@@ -127,22 +127,25 @@ function cardTimes() {
     }
 }
 
-// 修复后的获取下一个除夕函数（兜底写死2026-02-16，确保绝对正确）
 function getNextNewYearEve() {
     const now = new Date();
-    for (let y = now.getFullYear(); y <= now.getFullYear() + 2; y++) {
-        for (let m = 0; m <= 1; m++) {
+    for (let y = now.getFullYear(); y <= now.getFullYear() + 5; y++) {
+        for (let m = 0; m <= 1; m++) { // 1月、2月
             for (let d = 1; d <= 31; d++) {
                 const solarDate = new Date(y, m, d);
-                if (solarDate.getMonth() !== m) continue;
+                if (solarDate.getMonth() !== m) continue; // 跳过无效日期
+
                 try {
                     const lunar = chineseLunar.solarToLunar(solarDate);
-                    if (lunar.lMonth === 0 && lunar.lDay === 1) {
+                    const monthStr = chineseLunar.format(lunar, "M");
+                    const dayStr = chineseLunar.format(lunar, "d");
+                    if (monthStr === "正月" && dayStr === "初一") {
                         const newYearEve = new Date(solarDate);
-                        newYearEve.setDate(newYearEve.getDate() - 1);
+                        newYearEve.setDate(newYearEve.getDate() - 1); // 除夕 = 正月初一前一天
                         if (newYearEve > now) {
                             return newYearEve;
                         }
+                        // 已过今年除夕，继续找下一年
                     }
                 } catch (err) {
                     continue;
@@ -150,6 +153,9 @@ function getNextNewYearEve() {
             }
         }
     }
-    // 兜底直接返回2026年除夕（2026-02-16），防止遍历异常
-    return new Date(2026, 1, 16);
+    // 极少数情况下的兜底（返回明年除夕的估算值）
+    const nextYear = now.getFullYear() + 1;
+    // 根据已知数据，2027年除夕是2027-02-05，2028年除夕是2028-01-25，可自行补充
+    // 这里返回一个较晚的未来日期，确保倒计时不为0
+    return new Date(nextYear, 1, 1); // nextYear年2月1日
 }
